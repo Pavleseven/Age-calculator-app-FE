@@ -1,0 +1,114 @@
+:root{
+   /* Neutral */
+   --White: hsl(0, 0%, 100%);
+   --Offwhite: hsl(0, 0%, 94%);
+   --Lightgrey: hsl(0, 0%, 86%);
+   --Smokeygrey: hsl(0, 1%, 44%);
+   --Offblack: hsl(0, 0%, 8%);
+
+   /* Primary */
+
+   --Purple: hsl(259, 100%, 65%);
+   --Lightred: hsl(0, 100%, 67%);
+
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body{
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Offwhite);
+    
+  } 
+/* App style */
+  .app{
+    /* max-width: 500px; */
+    max-height: 350px;
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    padding-right: 5rem;
+    background-color: var(--White);
+    border-radius: 1rem 1rem 6rem 1rem;
+    position: relative;
+  }
+/* Input style */
+.input-data{
+    display: flex;
+    gap:.5rem;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--Smokeygrey);
+    font-weight:700;
+    /* border-bottom: 1px solid var(--Smokeygrey); */
+  }
+  
+  .input{
+    padding: .5rem;
+    max-width: 80px;
+    border: .1px solid var(--Offwhite);
+    border-radius: .3rem;
+    margin-top: .1rem;
+}
+
+::placeholder{
+    color: var(--Smokeygrey);
+    font-weight: 800;
+    font-family: inherit;
+}
+/* button image style*/
+
+
+.btn-div{
+    display: flex;
+    justify-content: end;
+    
+    transform: translateX(25%);
+    
+}
+
+.btn{
+    background-color: var(--Purple);
+    position: inherit;
+    border: 0;
+    border-radius: 50%;
+    padding: .5rem;
+    transform: translateY(-60%);
+}
+
+.btn:hover{
+  background-color: var(--Offblack);
+}
+
+/* results style */
+
+.app-result{
+   font-size: 52px;
+   font-weight: 800;
+   font-style: italic;
+   color: var(--Offblack);
+   transform: translateY(-20%);
+}
+
+span{
+    color: var(--Purple);
+}
+
+.secondary{
+  transform: translateY(-10%);
+  transition: all 1s;
+}
